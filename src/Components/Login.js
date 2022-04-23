@@ -8,7 +8,9 @@ const Login = () => {
                 <LoginFields/>
                 <h3>watermark</h3>
             </div>
-            <img src="https://wallpaperaccess.com/full/3997333.jpg" alt="Abstract art" className="right"/>
+            <div className="right">
+                <div className="image"></div>
+            </div>
         </div>
      );
 }
