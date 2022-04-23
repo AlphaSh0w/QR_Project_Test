@@ -53,3 +53,8 @@ code {
         order: 2;
     }
 }
+
+.login-form {
+    width: auto;
+    margin: auto;
+}
