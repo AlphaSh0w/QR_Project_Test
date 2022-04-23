@@ -11,10 +11,37 @@ code {
 
 .login-page {
     display: flex;
+    flex-direction: column;
 }
 
 .login-page .left,
 .login-page .right {
-    width: 50%;
-    height: 100vh;
+    width: 100vw;
+    height: 50%;
+}
+
+.login-page .right {
+    order: 1;
+}
+
+.login-page .left {
+    order: 2;
+}
+
+@media screen and (min-width:800px) {
+    .login-page {
+        display: flex;
+        flex-direction: row;
+    }
+    .login-page .left,
+    .login-page .right {
+        width: 50%;
+        height: 100vh;
+    }
+    .login-page .left {
+        order: 1;
+    }
+    .login-page .right {
+        order: 2;
+    }
 }
