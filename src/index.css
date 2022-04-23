@@ -55,6 +55,20 @@ code {
 }
 
 .login-form {
-    width: auto;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
     margin: auto;
+}
+
+.login-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form .password-options {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
