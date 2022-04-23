@@ -22,18 +22,16 @@ code {
     flex-direction: column;
 }
 
-.login-page .left,
 .login-page .right {
-    width: 100%;
+    order: 1;
+    width: 100vw;
     height: 20vh;
 }
 
 .login-page .left {
     order: 2;
-}
-
-.login-page .right {
-    order: 1;
+    width: 100vw;
+    height: 80vh;
 }
 
 @media screen and (min-width:800px) {
@@ -43,7 +41,7 @@ code {
     }
     .login-page .left,
     .login-page .right {
-        width: 50%;
+        width: 50vw;
         height: 100vh;
     }
     .login-page .left {
