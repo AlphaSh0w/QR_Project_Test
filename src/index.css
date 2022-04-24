@@ -41,7 +41,7 @@ code {
     justify-content: space-between;
 }
 
-@media screen and (min-width:800px) {
+@media screen and (min-width:900px) {
     .login-page,
     .register-page {
         flex-direction: row;
@@ -60,6 +60,7 @@ code {
     .login-page .right,
     .register-page .right {
         order: 2;
+        min-height: 650px;
     }
 }
 
