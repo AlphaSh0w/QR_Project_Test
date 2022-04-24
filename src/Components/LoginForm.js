@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const LoginForm = () => {
     const [remmemberPass, setRemmemberPass] = useState(false);
@@ -26,7 +27,7 @@ const LoginForm = () => {
                 </div>
                 <button>Login</button>
             </form>
-            <p>Don't have an account ? <a href="/">Sign up</a></p>
+            <p>Don't have an account ? <Link to="/register">Sign up</Link></p>
         </div>
      );
 }
