@@ -3,8 +3,13 @@ import { createSlice } from "@reduxjs/toolkit";
 export const userHandlerSlice = createSlice({
     name: "userHandler",
     initialState: {
-        userName: "",
-        password: ""
+        accessToken : null,
+        id: null,
+        fname: null,
+        lname: null,
+        username: null,
+        email: null,
+        avatar: null
     },
     reducers : {
         setUsername: (state, action) => {
