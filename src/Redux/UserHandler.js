@@ -25,6 +25,6 @@ export const userHandlerSlice = createSlice({
     }
 });
 
-export const {setUsername, setPassword} = userHandlerSlice.actions;
+export const {setLoggedIn, setUserData} = userHandlerSlice.actions;
 
 export default userHandlerSlice.reducer;

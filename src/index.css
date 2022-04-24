@@ -9,6 +9,10 @@ code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
+.login p {
+    margin: auto auto;
+}
+
 .login-page .image,
 .register-page .image {
     width: 100%;
@@ -67,9 +71,13 @@ code {
 .login-form,
 .register-form {
     display: flex;
+    padding: 20px;
     flex-direction: column;
     width: 400px;
     margin: auto;
+    -moz-box-shadow: 0 0 3px #ccc;
+    -webkit-box-shadow: 0 0 3px #ccc;
+    box-shadow: 0 0 3px #ccc;
 }
 
 .login-form form,
@@ -84,6 +92,8 @@ code {
     justify-content: space-between;
     align-items: center;
 }
+
+form {}
 
 
 /* Button */

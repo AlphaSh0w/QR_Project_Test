@@ -1,17 +1,20 @@
 import { useState } from "react";
+import { useDispatch } from "react-redux";
+import {setLoggedIn} from "../Redux/UserHandler";
 //import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import axios from "../API/axios";
 const LOGIN_URL = "/login";
 
 
-
 const LoginForm = () => {
     const [remmemberPass, setRemmemberPass] = useState(false);
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
+    const dispatch = useDispatch();
     const handleLogin = async (e) => {
         e.preventDefault();
+        dispatch(setLoggedIn(false));
         try {
             const response = await axios.post(LOGIN_URL,
                 JSON.stringify({username: email, password}),
@@ -19,6 +22,7 @@ const LoginForm = () => {
                     headers: {"content-type":"application/json"}
                 });
             console.log(response?.data);
+            dispatch(setLoggedIn(true));
         }
         catch (err){
             console.log(err.message)
