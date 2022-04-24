@@ -72,7 +72,7 @@ code {
 }
 
 .login-form form,
-.register-form form {
+.register-form {
     display: flex;
     flex-direction: column;
 }
