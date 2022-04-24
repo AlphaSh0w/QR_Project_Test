@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux";
-import {setLoggedIn} from "../Redux/UserHandler";
-//import { useSelector } from "react-redux";
+import {setLoggedIn, setUserData} from "../Redux/UserHandler";
 import { Link } from "react-router-dom";
 import axios from "../API/axios";
 const LOGIN_URL = "/login";
@@ -23,6 +22,7 @@ const LoginForm = () => {
                 });
             console.log(response?.data);
             dispatch(setLoggedIn(true));
+            dispatch(setUserData({...response.data.user,accesstoken:response.data.accessToken}));
         }
         catch (err){
             console.log(err.message)

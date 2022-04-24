@@ -80,6 +80,11 @@ code {
     box-shadow: 0 0 3px #ccc;
 }
 
+.login-page img {
+    width: 60px;
+    height: 60px;
+}
+
 .login-form form,
 .register-form {
     display: flex;
