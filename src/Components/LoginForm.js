@@ -23,7 +23,7 @@ const LoginForm = () => {
                         />
                         Remmember password
                     </label>
-                    <a href="/">Forgot password</a>
+                    <Link to="/resetpassword">Forgot password</Link>
                 </div>
                 <button>Login</button>
             </form>
